@@ -1,0 +1,88 @@
+
+<div class='row'>
+    <div class='col-md-12'>
+        <h1>Angular Event Bindings &amp; HTML Tags</h1>
+    </div>
+</div>
+<div class='row'>
+    <div class='col-md-6'>
+        <label>Anchor tags</label>
+        <a (click)='sendText()' 
+           (keyup.enter)='sendText()'
+           tabindex='0'
+           class='test-btn'>
+            <span>&lt;a&gt;</span> (click) and (keyup)
+        </a>
+        <a (click)='sendText()' 
+           tabindex='0'
+           class='test-btn'>
+            <span>&lt;a&gt;</span> (click)
+        </a>
+    </div>
+    <div class='col-md-6'>
+        <label>Button tags</label>
+        <button (click)='sendText()' 
+                (keyup.enter)='sendText()' 
+                class='test-btn'>
+            <span>&lt;button&gt;</span> (click) and (keyup)
+        </button>
+        <button (click)='sendText()' 
+                class='test-btn'>
+            <span>&lt;button&gt;</span> (click)
+        </button>
+    </div>
+</div>
+<div class='row'>
+    <div class='col-md-6'>
+        <label>Division tags</label>
+        <div (click)='sendText()' 
+             (keyup.enter)='sendText()'
+             tabindex='0'
+             class='test-btn'>
+            <span>&lt;div&gt;</span> (click) and (keyup)
+        </div>
+        <div (click)='sendText()' 
+             tabindex='0'
+             class='test-btn'>
+            <span>&lt;div&gt;</span> (click)
+        </div>
+    </div>
+    <div class='col-md-6'>
+        <label>List item tags</label>
+        <ul class='ul-test'>
+            <li (click)='sendText()' 
+                (keyup.enter)='sendText()'
+                tabindex='0'
+                class='test-btn'>
+                <span>&lt;li&gt;</span> (click) and (keyup)
+            </li>
+        </ul>
+        <ul class='ul-test'>
+            <li (click)='sendText()'
+                tabindex='0'
+                class='test-btn'>
+                <span>&lt;li&gt;</span> (click)
+            </li>
+        </ul>
+    </div>
+</div>
+<div class='row'>
+    <div class='col-md-3'></div>
+    <div class='col-md-6'>
+        <h2>Messages</h2>
+        <div class='reset-btn-wrapper'>
+            <button (click)='resetChat()' class='reset-btn'>Reset</button>
+        </div>
+    </div>
+</div>
+<div class='row'>
+    <div class='col-md-3'></div>
+    <div class='col-md-6'>
+        <div class='chat-wrapper'>
+            <div *ngFor='let te of textMessages'>
+                <speech-bubble [textMessage]='te'></speech-bubble>
+            </div>
+            <p *ngIf='textMessages.length === 0' class='no-chats'>You have not chat history.</p>
+        </div>
+    </div>
+</div>

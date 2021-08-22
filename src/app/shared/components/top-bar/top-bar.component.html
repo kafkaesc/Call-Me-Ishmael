@@ -1,0 +1,26 @@
+<div class='top-bar'>
+    <div class='top-wrapper'>
+        <span class='top-cmi'>Call Me</span>
+        <img (click)='gotoHome()'
+             (keyup.enter)='gotoHome()'
+             alt='The Call Me Ishmael logo, a phone receiver inside of a shield' 
+             src='assets/images/call-me-ishmael-shield.png'
+             tabindex='0'
+             class='cmi-shield'>
+        <span class='top-cmi'>Ishmael</span>
+    </div>
+</div>
+<div class='second-bar'>
+    <div class='second-bar-wrapper'>
+       <div class='row'>
+           <ul class='nav-2'>
+               <li (click)='gotoSpecs()' (keyup.enter)='gotoSpecs()'>
+                   <span tabindex='0'>Specs</span>
+                </li>
+               <li (click)='gotoAbout()' (keyup.enter)='gotoAbout()'>
+                   <span tabindex='0'>About</span>
+                </li>
+           </ul>
+       </div>
+    </div>
+</div>

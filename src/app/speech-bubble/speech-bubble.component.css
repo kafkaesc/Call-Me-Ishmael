@@ -1,0 +1,35 @@
+.bubble-block {
+    display: block;
+}
+
+    .bubble-block label {
+        display: block;
+        color: #000;
+    }
+
+    .bubble-block.left {
+        text-align: left;
+    }
+
+    .bubble-block.right {
+        text-align: right;
+    }
+
+.bubble-bg {
+    background-color: #111;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 4px;
+    max-width: 66.67%;
+    text-align: left;
+    padding: 8px 16px;
+}
+
+    .bubble-block.right .bubble-bg {
+        background-color: #006994;
+    }
+
+    .bubble-block.left .bubble-bg {
+        background-color: #940069;
+    }

@@ -1,0 +1,16 @@
+h1 {
+    font-size: 128px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.p-wrapper {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 4px;
+    padding-right: 4px;
+}
