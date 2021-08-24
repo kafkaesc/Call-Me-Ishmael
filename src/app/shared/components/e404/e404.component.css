@@ -1,10 +1,17 @@
 h1 {
     font-size: 128px;
+    margin-bottom: -4px;
     text-align: center;
 }
 
 p {
     text-align: center;
+}
+
+.lost {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
 }
 
 .p-wrapper {

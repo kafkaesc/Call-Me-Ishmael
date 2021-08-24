@@ -2,6 +2,13 @@
     display: block;
     max-width: 900px;
     margin: 0 auto;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 770px) {
+    .p-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
