@@ -13,14 +13,14 @@ export class TopBarComponent implements OnInit {
     }
 
     gotoAbout(): void {
-        this.router.navigate(['About']);
+        this.router.navigate(['/About']);
     }
 
     gotoHome(): void {
-        this.router.navigate(['Home']);
+        this.router.navigate(['/Home']);
     }
 
     gotoSpecs(): void {
-        this.router.navigate(['Specs']);
+        this.router.navigate(['/Specs']);
     }
 }
