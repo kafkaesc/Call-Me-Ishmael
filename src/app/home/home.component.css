@@ -3,6 +3,11 @@ h2 {
     width: 50%;
 }
 
+.cmi-wrapper {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 .test-btn {
     color: #000;
     cursor: pointer;
@@ -49,6 +54,11 @@ h2 {
         background-color: #006994;
     }
 
+.p-w-4 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 .chat-wrapper {
     background-color: #eee;
     border-radius: 8px;
@@ -63,10 +73,16 @@ h2 {
     text-align: center;
 }
 
+@media screen and (max-width: 512px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .test-btn {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        font-size: 14px;
+        padding: 8px;
         text-align: center;
     }
 }

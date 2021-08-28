@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { SpecsComponent } from './specs/specs.component';
 import { SpeechBubbleComponent } from './speech-bubble/speech-bubble.component';
+import { HtmlTagPipe } from './core/pipes/html-tag.pipe';
 
 const routes = [
     { path: '', redirectTo: 'Home', pathMatch: 'full' },
@@ -26,6 +27,7 @@ const routes = [
         AppComponent,
         E404Component,
         HomeComponent,
+        HtmlTagPipe,
         MainComponent,
         TopBarComponent,
         AboutComponent,
