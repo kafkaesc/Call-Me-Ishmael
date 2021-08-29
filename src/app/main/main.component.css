@@ -1,7 +1,7 @@
 .p-wrapper {
     display: block;
-    max-width: 900px;
     margin: 0 auto;
+    max-width: 900px;
     padding-left: 8px;
     padding-right: 8px;
 }

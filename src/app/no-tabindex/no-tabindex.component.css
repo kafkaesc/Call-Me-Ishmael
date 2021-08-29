@@ -1,3 +1,14 @@
+h1 {
+    line-height: 0.9;
+}
+
+h1 span.sub {
+    display: inline-block;
+    font-size: .66em;
+    font-style: italic;
+    margin-top: -50px;
+}
+
 h2 {
     display: inline-block;
     width: 50%;

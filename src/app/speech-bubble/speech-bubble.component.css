@@ -3,8 +3,8 @@
 }
 
     .bubble-block label {
-        display: block;
         color: #000;
+        display: block;
     }
 
     .bubble-block.left {
@@ -22,8 +22,8 @@
     display: inline-block;
     margin-bottom: 4px;
     max-width: 66.67%;
-    text-align: left;
     padding: 8px 16px;
+    text-align: left;
 }
 
     .bubble-block.right .bubble-bg {
