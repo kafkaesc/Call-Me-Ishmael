@@ -1,9 +1,121 @@
 <div class='row'>
     <div class='col-md-12'>
         <h1>Specs</h1>
+        <h2>What's This About?</h2>
         <p>
-            An explanation about the Angulr event handlers 
-            and a table of how they interact with (click) and (keyup) will go here.
+            This project is a demonstration of how different HTML elements behave with Angular's 
+            click and keyup.enter event handlers. Proper use of the keyup.enter event handler is 
+            critical to maintain site usability for keyboard-exclusive users and is therefore 
+            critical to follow 
+            <a href='https://www.w3.org/TR/WCAG21/#keyboard-accessible'>
+                WCAG Guidleine 2.1
+            </a>.
+        </p>
+        <h2>How These Event Handlers Work</h2>
+        <p>
+            Both event handlers have straightforward names. The click handler is declared on an 
+            HTML element along with a quoted template statement. Angular event binding will listen 
+            for the element's click event and call the template statement. The keyup.enter event 
+            listener follows the same pattern, with the Angular event binding instead listening 
+            for the element's keyup enter event. The standard practice is to call a single 
+            function to handle the event.
+        </p>
+        <p>
+            The following is an example of the click and keyup.enter event handlers.
+        </p>
+        <p>
+            <code>&lt;button (click)="myClickFunction()"&gt;Submit{{'/button' | htmlTag}}</code><br />
+            <code>&lt;button (keyup.enter)="myEnterFunction()"&gt;Submit{{'/button' | htmlTag}}</code>
+        </p>
+        <h2>Using These Event Handlers Properly</h2>
+        <p>
+            The click event handler works consistently and as expected. All elements with a click 
+            event handler on them will run their function when clicked. The keyup.enter function 
+            is is also consistent. All elements with a keyup.enter handler will run their function 
+            when enter is pressed while the element is focused.
+        </p>
+        <p>
+            Problems do sometimes arise when both event handlers are combined. While in most cases 
+            combining both event handlers is necessary, that is not the case with button elements. 
+            This is because the click event will be activated by pressing enter on a button, 
+            something that does not happen with other elements. This means that if both click and 
+            keyup.enter are used on a button element they will each be activated when a user presses 
+            enter.
+        </p>
+        <h2>Specifications For HTML Elements</h2>
+        <table class='spec-table'>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        {{'a' | htmlTag}}<br />
+                        (click)<br />
+                        <br />
+                    </th>
+                    <th>
+                        {{'a' | htmlTag}}<br />
+                        (click)<br />
+                        (keyup.enter)
+                    </th>
+                    <th>
+                        {{'button' | htmlTag}}<br />
+                        (click)<br />
+                        <br />
+                    </th>
+                    <th>
+                        {{'button' | htmlTag}}<br />
+                        (click)<br />
+                        (keyup.enter)
+                    </th>
+                    <th>
+                        {{'div' | htmlTag}}<br />
+                        (click)<br />
+                        <br />
+                    </th>
+                    <th>
+                        {{'div' | htmlTag}}<br />
+                        (click)<br />
+                        (keyup.enter)
+                    </th>
+                    <th>
+                        {{'li' | htmlTag}}<br />
+                        (click)<br />
+                        <br />
+                    </th>
+                    <th>
+                        {{'li' | htmlTag}}<br />
+                        (click)<br />
+                        (keyup.enter)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>User clicks</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td>User presses enter</td>
+                    <td>X</td>
+                    <td>S</td>
+                    <td>S</td>
+                    <td>*</td>
+                    <td>X</td>
+                    <td>S</td>
+                    <td>X</td>
+                    <td>S</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class='small'>
+            S => success; X => failure; * => both event listeners will trigger;
         </p>
     </div>
 </div>
