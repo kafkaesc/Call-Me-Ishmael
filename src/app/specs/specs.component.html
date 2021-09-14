@@ -16,7 +16,7 @@
             Both event handlers have straightforward names. The click handler is declared on an 
             HTML element along with a quoted template statement. Angular event binding will listen 
             for the element's click event and call the template statement. The keyup.enter event 
-            listener follows the same pattern, with the Angular event binding instead listening 
+            listener follows the same pattern, with the Angular event binding now listening 
             for the element's keyup enter event. The standard practice is to call a single 
             function to handle the event.
         </p>
@@ -31,11 +31,11 @@
         <p>
             The click event handler works consistently and as expected. All elements with a click 
             event handler on them will run their function when clicked. The keyup.enter function 
-            is is also consistent. All elements with a keyup.enter handler will run their function 
+            is also consistent. All elements with a keyup.enter handler will run their function 
             when enter is pressed while the element is focused.
         </p>
         <p>
-            Problems do sometimes arise when both event handlers are combined. While in most cases 
+            Problems can arise when both event handlers are combined. While in most cases 
             combining both event handlers is necessary, that is not the case with button elements. 
             This is because the click event will be activated by pressing enter on a button, 
             something that does not happen with other elements. This means that if both click and 
