@@ -43,78 +43,82 @@
             enter.
         </p>
         <h2>Specifications For HTML Elements</h2>
-        <table class='spec-table'>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>
-                        {{'a' | htmlTag}}<br />
-                        (click)<br />
-                        <br />
-                    </th>
-                    <th>
-                        {{'a' | htmlTag}}<br />
-                        (click)<br />
-                        (keyup.enter)
-                    </th>
-                    <th>
-                        {{'button' | htmlTag}}<br />
-                        (click)<br />
-                        <br />
-                    </th>
-                    <th>
-                        {{'button' | htmlTag}}<br />
-                        (click)<br />
-                        (keyup.enter)
-                    </th>
-                    <th>
-                        {{'div' | htmlTag}}<br />
-                        (click)<br />
-                        <br />
-                    </th>
-                    <th>
-                        {{'div' | htmlTag}}<br />
-                        (click)<br />
-                        (keyup.enter)
-                    </th>
-                    <th>
-                        {{'li' | htmlTag}}<br />
-                        (click)<br />
-                        <br />
-                    </th>
-                    <th>
-                        {{'li' | htmlTag}}<br />
-                        (click)<br />
-                        (keyup.enter)
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>User clicks</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>S</td>
-                </tr>
-                <tr>
-                    <td>User presses enter</td>
-                    <td>X</td>
-                    <td>S</td>
-                    <td>S</td>
-                    <td>*</td>
-                    <td>X</td>
-                    <td>S</td>
-                    <td>X</td>
-                    <td>S</td>
-                </tr>
-            </tbody>
+        <table class='spec-table2'>
+            <tr>
+                <td></td>
+                <td>User clicks</td>
+                <td>User presses enter</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'a' | htmlTag}}<br />
+                    (click)
+                </td>
+                <td>S</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'a' | htmlTag}}<br />
+                    (click)<br />
+                    (keyup.enter)
+                </td>
+                <td>S</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'button' | htmlTag}}<br />
+                    (click)
+                </td>
+                <td>S</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'button' | htmlTag}}<br />
+                    (click)<br />
+                    (keyup.enter)
+                </td>
+                <td>S</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'div' | htmlTag}}<br />
+                    (click)
+                </td>
+                <td>S</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'div' | htmlTag}}<br />
+                    (click)<br />
+                    (keyup.enter)
+                </td>
+                <td>S</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'li' | htmlTag}}<br />
+                    (click)
+                </td>
+                <td>S</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td class='left-key'>
+                    {{'li' | htmlTag}}<br />
+                    (click)<br />
+                    (keyup.enter)
+                </td>
+                <td>S</td>
+                <td>S</td>
+            </tr>
         </table>
-        <p class='small'>
+        <p class='spec-table-footer'>
             S => success; X => failure; * => both event listeners will trigger;
         </p>
     </div>
