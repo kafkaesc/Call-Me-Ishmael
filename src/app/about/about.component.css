@@ -16,6 +16,7 @@ ul.social-links {
 
 ul.tech-badges {
     list-style-type: none;
+    padding: 0;
     margin-bottom: 32px;
 }
 
