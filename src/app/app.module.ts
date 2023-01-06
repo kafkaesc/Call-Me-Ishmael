@@ -14,34 +14,35 @@ import { SpecsComponent } from './specs/specs.component';
 import { SpeechBubbleComponent } from './speech-bubble/speech-bubble.component';
 
 const routes = [
-    { path: '', redirectTo: 'Home', pathMatch: 'full' },
-    { path: '', component: MainComponent, children: [
-        { path: 'Home', component: HomeComponent},
-        { path: 'About', component: AboutComponent },
-        { path: 'Specs', component: SpecsComponent },
-        { path: 'NoTabindex', component: NoTabindexComponent }
-    ] },
-    { path: '**', component: E404Component }
+  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  {
+    path: '',
+    component: MainComponent,
+    children: [
+      { path: 'Home', component: HomeComponent },
+      { path: 'About', component: AboutComponent },
+      { path: 'Specs', component: SpecsComponent },
+      { path: 'NoTabindex', component: NoTabindexComponent },
+    ],
+  },
+  { path: '**', component: E404Component },
 ];
 
 @NgModule({
-    declarations: [
-        AboutComponent,
-        AppComponent,
-        E404Component,
-        HomeComponent,
-        HtmlTagPipe,
-        MainComponent,
-        NoTabindexComponent,
-        SpeechBubbleComponent,
-        SpecsComponent,
-        TopBarComponent
-    ],
-    imports: [
-        BrowserModule,
-        RouterModule.forRoot(routes)
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AboutComponent,
+    AppComponent,
+    E404Component,
+    HomeComponent,
+    HtmlTagPipe,
+    MainComponent,
+    NoTabindexComponent,
+    SpeechBubbleComponent,
+    SpecsComponent,
+    TopBarComponent,
+  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

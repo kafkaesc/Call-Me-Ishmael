@@ -2,25 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'top-bar',
-    templateUrl: './top-bar.component.html',
-    styleUrls: ['./top-bar.component.css']
+  selector: 'top-bar',
+  templateUrl: './top-bar.component.html',
+  styleUrls: ['./top-bar.component.css'],
 })
 export class TopBarComponent implements OnInit {
-    constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-    ngOnInit(): void {
-    }
+  ngOnInit(): void {}
 
-    gotoAbout(): void {
-        this.router.navigate(['/About']);
-    }
+  gotoAbout(): void {
+    this.router.navigate(['/About']);
+  }
 
-    gotoHome(): void {
-        this.router.navigate(['/Home']);
-    }
+  gotoHome(): void {
+    this.router.navigate(['/Home']);
+  }
 
-    gotoSpecs(): void {
-        this.router.navigate(['/Specs']);
-    }
+  gotoSpecs(): void {
+    this.router.navigate(['/Specs']);
+  }
 }

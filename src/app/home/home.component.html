@@ -1,113 +1,116 @@
-<div class='row'>
-    <div class='col-md-12'>
-        <h1>Angular Event Bindings &amp; HTML Tags</h1>
-    </div>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Angular Event Bindings &amp; HTML Tags</h1>
+  </div>
 </div>
-<div class='cmi-wrapper'>
-    <div class='row'>
-        <div class='col-md-6'>
-            <label>Anchor tags</label>
-            <div class='row'>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <a (click)='sendText()'
-                       (keyup.enter)='sendText()'
-                       tabindex='0'
-                       class='test-btn'>
-                        <span>{{'a' | htmlTag}}</span> (click) and (keyup)
-                    </a>
-                </div>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <a (click)='sendText()'
-                       tabindex='0'
-                       class='test-btn'>
-                        <span>{{'a' | htmlTag}}</span> (click)
-                    </a>
-                </div>
-            </div>
+<div class="cmi-wrapper">
+  <div class="row">
+    <div class="col-md-6">
+      <label>Anchor tags</label>
+      <div class="row">
+        <div class="col-6 col-sm-12 p-w-4">
+          <a
+            (click)="sendText()"
+            (keyup.enter)="sendText()"
+            tabindex="0"
+            class="test-btn"
+          >
+            <span>{{ "a" | htmlTag }}</span> (click) and (keyup)
+          </a>
         </div>
-        <div class='col-md-6'>
-            <label>Button tags</label>
-            <div class='row'>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <button (click)='sendText()'
-                            (keyup.enter)='sendText()'
-                            class='test-btn'>
-                        <span>{{'button' | htmlTag}}</span> (click) and (keyup)
-                    </button>
-                </div>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <button (click)='sendText()'
-                            class='test-btn'>
-                        <span>{{'button' | htmlTag}}</span> (click)
-                    </button>
-                </div>
-            </div>
+        <div class="col-6 col-sm-12 p-w-4">
+          <a (click)="sendText()" tabindex="0" class="test-btn">
+            <span>{{ "a" | htmlTag }}</span> (click)
+          </a>
         </div>
+      </div>
     </div>
-    <div class='row'>
-        <div class='col-md-6'>
-            <label>Division tags</label>
-            <div class='row'>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <div (click)='sendText()'
-                         (keyup.enter)='sendText()'
-                         tabindex='0'
-                         class='test-btn'>
-                        <span>{{'div' | htmlTag}}</span> (click) and (keyup)
-                    </div>
-                </div>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <div (click)='sendText()'
-                         tabindex='0'
-                         class='test-btn'>
-                        <span>{{'div' | htmlTag}}</span> (click)
-                    </div>
-                </div>
-            </div>
+    <div class="col-md-6">
+      <label>Button tags</label>
+      <div class="row">
+        <div class="col-6 col-sm-12 p-w-4">
+          <button
+            (click)="sendText()"
+            (keyup.enter)="sendText()"
+            class="test-btn"
+          >
+            <span>{{ "button" | htmlTag }}</span> (click) and (keyup)
+          </button>
         </div>
-        <div class='col-md-6'>
-            <label>List item tags</label>
-            <div class='row'>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <ul class='ul-test'>
-                        <li (click)='sendText()'
-                            (keyup.enter)='sendText()'
-                            tabindex='0'
-                            class='test-btn'>
-                            <span>{{'li' | htmlTag}}</span> (click) and (keyup)
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-6 col-sm-12 p-w-4'>
-                    <ul class='ul-test'>
-                        <li (click)='sendText()'
-                            tabindex='0'
-                            class='test-btn'>
-                            <span>{{'li' | htmlTag}}</span> (click)
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-6 col-sm-12 p-w-4">
+          <button (click)="sendText()" class="test-btn">
+            <span>{{ "button" | htmlTag }}</span> (click)
+          </button>
         </div>
+      </div>
     </div>
-    <div class='row'>
-        <div class='col-md-3'></div>
-        <div class='col-md-6'>
-            <h2>Messages</h2>
-            <div class='reset-btn-wrapper'>
-                <button (click)='resetChat()' class='reset-btn'>Reset</button>
-            </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Division tags</label>
+      <div class="row">
+        <div class="col-6 col-sm-12 p-w-4">
+          <div
+            (click)="sendText()"
+            (keyup.enter)="sendText()"
+            tabindex="0"
+            class="test-btn"
+          >
+            <span>{{ "div" | htmlTag }}</span> (click) and (keyup)
+          </div>
         </div>
-    </div>
-    <div class='row'>
-        <div class='col-md-3'></div>
-        <div class='col-md-6'>
-            <div class='chat-wrapper'>
-                <div *ngFor='let te of textMessages'>
-                    <speech-bubble [textMessage]='te'></speech-bubble>
-                </div>
-                <p *ngIf='textMessages.length === 0' class='no-chats'>You have no chat history.</p>
-            </div>
+        <div class="col-6 col-sm-12 p-w-4">
+          <div (click)="sendText()" tabindex="0" class="test-btn">
+            <span>{{ "div" | htmlTag }}</span> (click)
+          </div>
         </div>
+      </div>
     </div>
+    <div class="col-md-6">
+      <label>List item tags</label>
+      <div class="row">
+        <div class="col-6 col-sm-12 p-w-4">
+          <ul class="ul-test">
+            <li
+              (click)="sendText()"
+              (keyup.enter)="sendText()"
+              tabindex="0"
+              class="test-btn"
+            >
+              <span>{{ "li" | htmlTag }}</span> (click) and (keyup)
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-12 p-w-4">
+          <ul class="ul-test">
+            <li (click)="sendText()" tabindex="0" class="test-btn">
+              <span>{{ "li" | htmlTag }}</span> (click)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h2>Messages</h2>
+      <div class="reset-btn-wrapper">
+        <button (click)="resetChat()" class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="chat-wrapper">
+        <div *ngFor="let te of textMessages">
+          <speech-bubble [textMessage]="te"></speech-bubble>
+        </div>
+        <p *ngIf="textMessages.length === 0" class="no-chats">
+          You have no chat history.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>

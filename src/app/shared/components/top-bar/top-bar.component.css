@@ -1,51 +1,52 @@
 .top-bar {
-    background-color: #006994;
-    height: 64px;
+  background-color: #006994;
+  height: 64px;
 }
 
 .top-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .cmi-shield {
-    cursor: pointer;
-    display: inline-block;
-    height: 90px;
-    margin-left: 16px;
-    margin-right: 16px;
+  cursor: pointer;
+  display: inline-block;
+  height: 90px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .top-cmi {
-    color: #fff;
-    font-family: 'Source Serif Pro', 'Georgia', serif;
-    font-size: 32px;
-    font-style: italic;
-    text-align: center;
+  color: #fff;
+  font-family: "Source Serif Pro", "Georgia", serif;
+  font-size: 32px;
+  font-style: italic;
+  text-align: center;
 }
 
 .second-bar {
-    background-color: #eee;
-    height: 32px;
-    margin-bottom: 8px;
+  background-color: #eee;
+  height: 32px;
+  margin-bottom: 8px;
 }
 
 .second-bar-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 ul.nav-2 {
-    list-style: none;
-    margin: 4px 0 0 0;
+  list-style: none;
+  margin: 4px 0 0 0;
 }
 
 ul.nav-2 li {
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    width: 50%;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
 }
 
-    ul.nav-2 li:hover, ul.nav-2 li span:focus {
-        font-style: italic;
-    }
+ul.nav-2 li:hover,
+ul.nav-2 li span:focus {
+  font-style: italic;
+}
