@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'htmlTag'
+  name: 'htmlTag',
 })
 export class HtmlTagPipe implements PipeTransform {
-    transform(val: string): string {
-        return '<' + val + '>';
-    }
+  transform(val: string): string {
+    return '<' + val + '>';
+  }
 }

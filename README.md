@@ -9,6 +9,7 @@ A second important behavior to notice is that a button element will automaticall
 In this demo all the buttons act to send a text message to your friend Ishmael, asking him to call you back. If you send him too many messages he will become annoyed and block you. Be careful using the button with both (click) and (keyup.enter) event handlers, because he'll get annoyed twice as fast!
 
 To run:
+
 1. navigate to the project folder
 1. `npm install`
 1. `ng serve -o`
