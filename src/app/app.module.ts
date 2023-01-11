@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -13,7 +13,7 @@ import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
 import { SpecsComponent } from './specs/specs.component';
 import { SpeechBubbleComponent } from './speech-bubble/speech-bubble.component';
 
-const routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'Home', pathMatch: 'full' },
   {
     path: '',
