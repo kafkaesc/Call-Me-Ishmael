@@ -2,17 +2,17 @@ import { Component, Input, OnInit } from '@angular/core';
 import { IMessage } from '../core/models/iMessage';
 
 @Component({
-  selector: 'speech-bubble',
-  templateUrl: './speech-bubble.component.html',
-  styleUrls: ['./speech-bubble.component.css'],
+	selector: 'speech-bubble',
+	templateUrl: './speech-bubble.component.html',
+	styleUrls: ['./speech-bubble.component.css'],
 })
 export class SpeechBubbleComponent implements OnInit {
-  @Input() textMessage!: IMessage;
-  side: string = '';
+	@Input() textMessage!: IMessage;
+	side: string = '';
 
-  constructor() {}
+	constructor() {}
 
-  ngOnInit(): void {
-    this.side = this.textMessage.sender === 'You' ? 'right' : 'left';
-  }
+	ngOnInit(): void {
+		this.side = this.textMessage.sender === 'You' ? 'right' : 'left';
+	}
 }
