@@ -4,8 +4,8 @@
  * an endorsement that Han shot first, or an expression of preference between
  * tabs or spaces. */
 export interface IMessage {
-  sender: string;
-  receiver: string;
-  body: string;
-  timestamp: Date;
+	sender: string;
+	receiver: string;
+	body: string;
+	timestamp: Date;
 }

@@ -1,4 +1,4 @@
-# Call Me, Ishmael
+# Call-Me-Ishmael
 
 This project is a demonstration of how various HTML elements will interact with Angular's (click) and (keyup) event handlers. The main page will display several element labeled by their type and which event handlers are active, e.g., an anchor tag with only a click event handler will be labeled "&lt;a&gt; (click)".
 

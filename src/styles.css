@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 a,
@@ -13,6 +13,6 @@ div,
 li,
 p,
 span {
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+	font-family: 'Noto Sans TC', 'Helvetica Neue', 'Helvetica', 'Arial',
+		sans-serif;
 }
