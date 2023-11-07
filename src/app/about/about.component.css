@@ -32,6 +32,6 @@ ul.tech-badges li {
 
 @media screen and (min-width: 990px) {
 	.tech-badge {
-		height: 128px;
+		height: 100px;
 	}
 }

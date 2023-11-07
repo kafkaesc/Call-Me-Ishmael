@@ -1,5 +1,7 @@
 # Call-Me-Ishmael
 
+Built by Jared Hettinger
+
 This project is a demonstration of how various HTML elements will interact with Angular's (click) and (keyup) event handlers. The main page will display several element labeled by their type and which event handlers are active, e.g., an anchor tag with only a click event handler will be labeled "&lt;a&gt; (click)".
 
 An important behavior to notice is that several elements will be focusable but unresponsive if a user presses enter. This is an obvious source of frustration and an impediment critical enough to be a WCAG issue. It will be necessary to pair identical (keyup.enter) event handlers to maintain UX.
@@ -14,8 +16,6 @@ To run:
 1. `npm install`
 1. `ng serve -o`
 
-A working version of this site can be viewed at https://kafkaesc.github.io/Call-Me-Ishmael/.
+A working version of this site can be viewed at https://call-me-ishmael.xyz.
 
 The full code for this site can be viewed at https://github.com/kafkaesc/Call-Me-Ishmael.
-
-Built by Jared Hettinger.
