@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { IMessage } from '../core/models/iMessage';
 
 @Component({
@@ -8,13 +7,11 @@ import { IMessage } from '../core/models/iMessage';
 	styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-	receiverName: string = 'Ishmael';
-	senderName: string = 'You';
+	receiverName = 'Ishmael';
+	senderName = 'You';
 	textMessages: IMessage[] = [];
 
 	notBlocked = true;
-
-	constructor() {}
 
 	ngOnInit(): void {}
 
